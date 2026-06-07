@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "asok-lucide"
+version = "1.0.0"
+description = "Lucide Icons integration for the Asok framework."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "Mpia Mimpiya PULUDISU" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "asok"
+]
+
+[project.urls]
+Homepage = "https://github.com/codewithmpia/asok-lucide"
+Repository = "https://github.com/codewithmpia/asok-lucide"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["asok_lucide*"]
+exclude = ["tests*", "scripts*"]
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.package-data]
+asok_lucide = [
+    "data/*.json"
+]
