@@ -21,17 +21,17 @@ class AsokLucideExtension(AsokExtension):
     def init_app(self, app: Asok) -> None:
         super().init_app(app)
 
-        # 1. Précharger les icônes en mémoire
+        # 1. Preload icons in memory
         load_icons()
 
-        # 2. Enregistrer le filtre de template dans Asok
+        # 2. Register the template filter in Asok
         TEMPLATE_FILTERS["lucide"] = render_lucide_icon
         if self.alias:
             TEMPLATE_FILTERS[self.alias] = render_lucide_icon
 
-        # 3. Partager la fonction d'aide globalement pour tous les templates
-        # Les variables enregistrées via app.share() étant appelées avec le request si elles sont callables,
-        # nous devons renvoyer la fonction de rendu sous forme de factory prenant request en paramètre.
+        # 3. Share the helper function globally for all templates
+        # Variables registered via app.share() are called with the request if they are callable,
+        # so we must return the rendering function as a factory taking request as a parameter.
         def lucide_helper(request: Any) -> Any:
             return render_lucide_icon
 
