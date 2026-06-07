@@ -46,7 +46,7 @@ pip install -e .
 
 ## Setup
 
-Register the extension in your `app.py`:
+Register the extension in your `wsgi.py`:
 
 ```python
 from asok import Asok
