@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING, Any, Optional
 
-from asok.core.extension import AsokExtension
+from asok import AsokExtension
 from asok.templates.filters import TEMPLATE_FILTERS
 
 from .icons import load_icons, render_lucide_icon
