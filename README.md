@@ -11,6 +11,12 @@
 <h1 align="center">asok-lucide</h1>
 
 <p align="center">
+  <a href="https://pypi.org/project/asok-lucide/">
+    <img src="https://img.shields.io/pypi/v/asok-lucide.svg" alt="PyPI version" />
+  </a>
+</p>
+
+<p align="center">
   <strong>Lucide Icons</strong> integration for the <strong>Asok Framework</strong>.
 </p>
 
@@ -20,6 +26,7 @@
 
 ## Resources
 
+* **PyPI Project**: [pypi.org/project/asok-lucide](https://pypi.org/project/asok-lucide/)
 * **Asok Framework**: [asok-framework.com](https://asok-framework.com/)
 * **Asok Repository**: [github.com/asok-framework/asok](https://github.com/asok-framework/asok)
 * **Lucide Icons**: [lucide.dev](https://lucide.dev/)
